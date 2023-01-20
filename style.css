@@ -44,3 +44,14 @@ main {
     letter-spacing: 3px;
     margin-left: 32px;
 }
+
+.mobile-menu div {
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
