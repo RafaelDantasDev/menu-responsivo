@@ -8,9 +8,16 @@ class MobileNavBAR {
         this.handleClick = this.handleClick.bind()
     }
 
+    animateLinks() {
+        this.navLinks.forEach((link, index) => {
+            link.style.animation ? (link.style.animation = "") : (link.style.animation = `navLinkFade 0.5s ease frowards ${index / 7 + 0.3}s`)
+        })
+    }
+
     handleClick() {
-        console.log()
         this.navlist.classList.toggle(this.activeClass)
+        this.mobileMenu.classList.toggle(this.activeClass)
+        this.animateLinks()
     }
     
     addClickEvent() {
